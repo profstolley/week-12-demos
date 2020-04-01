@@ -15,6 +15,51 @@ h1 {
   font-size: 72px;
 }
 
+/* Navigation Styles */
+.nav a {
+  background: #600;
+  border: 1px solid #600;
+  color: #EEE;
+  display: block;
+  line-height: 0;
+  outline: 0;
+  text-align: center;
+  text-decoration: none;
+  padding: 18px;
+  margin-bottom: 6px;
+}
+#about-page #nav-about,
+#home-page #nav-home,
+#resume-page #nav-resume,
+.nav a:hover,
+.nav a:active,
+.nav a:focus {
+  background: #EEE;
+  color: #600;
+}
+
+#about-page #nav-about,
+#home-page #nav-home,
+#resume-page #nav-resume {
+  cursor: default;
+}
+
+@media screen and (min-width: 330px) {
+  .nav {
+    display: flex;
+    flex-flow: row nowrap;
+    margin-left: -6px;
+    margin-right: 6px;
+  }
+  .nav li {
+    flex: 1 0 auto;
+    margin-left: 12px;
+  }
+  .nav a {
+    border-radius: 6px;
+  }
+}
+
 /* Resume Styles */
 h3 {
   font-weight: bold;
